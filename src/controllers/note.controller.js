@@ -81,6 +81,7 @@ const getOne = async (req, res, next) => {
 
 const addOne = async (req, res, next) => {
   const reqBody = req.body;
+  console.log('mand');
   console.log('hehehaha');
   try {
     const validatedReqData = await addNoteValidation.validateAsync(reqBody);
